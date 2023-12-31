@@ -15,6 +15,17 @@ format:
     reference-doc: custom-reference-doc.docx
     number-sections: true
     link-citations: true
+  pdf:
+    number-sections: true
+    papersize: a4
+    geometry: 
+      - top = 25mm
+      - left = 25mm
+      - bottom = 25mm
+      - right = 25mm
+    mainfont: Times New Roman
+    monofont: Times New Roman
+    fontsize: 12pt
 editor: visual
 bibliography: references.bib
 csl: apa.csl
