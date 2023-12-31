@@ -1,0 +1,11 @@
+---
+bibliography: references.bib
+---
+
+# Isi
+
+Bagian isi ini memaparkan tiga hal. Pertama adalah pemaparan tentang desain pembelajaran. Kedua merupakah pemaparan hasil implementasi desain tersebut. Ketiga adalah pembahasan.
+
+## Desain Pembelajaran
+
+Desain pembelajaran yang dideskripsikan di makalah ini merupakan satu dari banyak aktivitas pembelajaran digital berbasis pendidikan matematika realistik yang dikembangkan dalam rangka mengimajinasikan kembali mata kuliah Aljabar dan Trigonometri di program studi Pendidikan Matematika, Universitas Sanata Dharma, Yogyakarta. Aktivitas-aktivitas pembelajaran digital tersebut dikembangkan dengan menggunakan Desmos [@kristanto2019a; @kristanto2019b; @kristanto2021] dan dapat diakses secara terbuka di <https://teacher.desmos.com/collection/651e23c943f200bd64d30bb1?lang=id>.

@@ -1,28 +1,63 @@
 ---
-title: "Matematika Membumi: Perjumpaan Antara Matematika Realistik, Permasalahan Mendesak Planet Bumi, dan Teknologi"
+title: "Matematika Membumi: Ketika Matematika Realistik Berjumpa dengan Permasalahan Planet Bumi dan Teknologi"
+author:
+- name: Yosep Dwi Kristanto
+  url: https://people.usd.ac.id/~ydkristanto/
+  affiliation: Pendidikan Matematika, Universitas Sanata Dharma
+date: 2023/12/27
+keywords: 
+- pendidikan matematika realistik, realistic mathematics education, tujuan pembangunan berkelanjutan, sustainable development goals, perubahan iklim, climate change, pemanasan global, global warming, teknologi, Desmos
+abstract-title: Abstrak
+abstract: | 
+  Tujuan artikel ini adalah untuk mendeskripsikan desain pembelajaran matematika realistik yang menggunakan konteks permasalahan perubahan iklim yang ditunjang dengan menggunakan teknologi.
 format:
   docx:
     reference-doc: custom-reference-doc.docx
+    number-sections: true
 editor: visual
+bibliography: references.bib
+csl: apa.csl
+crossref: 
+  tbl-title: Tabel
+  tbl-prefix: Tabel
+  fig-title: Gambar
+  fig-prefix: Gambar
+  sec-prefix: Bagian
+  eq-title: Persamaan
+  eq-prefix: Persamaan
 ---
 
-# Pendahuluan
-
-Suatu waktu mahasiswa calon pendidik matematika ditugaskan untuk mengembangkan sebuah simulasi digital. Simulasi digital tersebut dimaksudkan untuk mengilustrasikan gerak parabola dari sebuah objek yang diluncurkan dengan kecepatan awal dan sudut elevasi tertentu, serta menggambarkan grafik ketinggian objek tersebut setiap waktunya. Menariknya, hampir semua produk simulasi mahasiswa tersebut, yaitu sekitar 96,7%, menggunakan persamaan matematis yang sama untuk merepresentasikan lintasan yang dilalui oleh objek tersebut dan relasi antara ketinggian objek tersebut setiap waktunya.
-
-## Running Code
-
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
-
 ```{r}
-1 + 1
+#| label: pendahuluan
+#| child: "01-pendahuluan.qmd"
 ```
 
-You can add options to executable code like this
-
 ```{r}
-#| echo: false
-2 * 2
+#| label: isi
+#| child: "02-isi.qmd"
 ```
 
-The `echo: false` option disables the printing of code (only output is displayed).
+```{r}
+#| label: penutup
+#| child: "03-penutup.qmd"
+```
+
+```{r}
+#| label: ucapan-terima-kasih
+#| child: "04-ucapan-terima-kasih.qmd"
+```
+
+```{r}
+#| label: lampiran
+#| child: "05-lampiran.qmd"
+```
+
+# Daftar Pustaka
+
+::: {#refs}
+:::
+
+```{r}
+#| label: biodata-penulis
+#| child: "06-biodata-penulis.qmd"
+```
