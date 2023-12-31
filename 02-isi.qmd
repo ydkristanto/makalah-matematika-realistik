@@ -14,14 +14,14 @@ Rangkaian aktivitas pembelajaran dalam topik transformasi fungsi memiliki judul 
 
 Rangkaian aktivitas pembelajaran topik transformasi fungsi diawali dengan kegiatan pendahuluan. Kegiatan tersebut dimulai dengan aktivitas mengamati dan bertanya-tanya (*notice and wondering*) untuk menyiapkan mahasiswa dalam menyelidiki perubahan suhu rata-rata permukaan bumi mulai dari tahun 1880--2022. Di dalam kegiatan ini, mahasiswa diminta untuk mengamati animasi yang menunjukkan visualisasi data suhu permukaan bumi setiap tahunnya. Cuplikan animasi tersebut ditunjukkan pada @fig-notice-wondering.
 
-![Mahasiswa mengamati dan bertanya-tanya di layar pertama.](aset/notice-wondering.png){#fig-notice-wondering}
+![Lembar kerja bagi mahasiswa untuk mengamati dan bertanya-tanya di layar pertama.](aset/notice-wondering.png){#fig-notice-wondering fig-align="center" width="60%"}
 
 Berdasarkan pengamatan dan pertanyaan yang telah diajukan, mahasiswa kemudian memodelkan perubahan suhu permukaan bumi setiap tahunnya dan mengevaluasi seberapa baik model yang telah dibuatnya. Aktivitas yang dilakukan oleh mahasiswa pada tahap ini ditunjukkan pada @fig-model-and-eval.
 
 ::: {#fig-model-and-eval layout-ncol="2"}
-![Lembar kerja untuk memodelkan perubahan suhu setiap tahunnya.](aset/modelling.png){#fig-modelling}
+![Lembar kerja untuk memodelkan perubahan suhu setiap tahunnya.](aset/modelling.png){#fig-modelling fig-align="center" width="40%"}
 
-![Lembar kerja untuk menilai model.](aset/eval-model.png){#fig-model-eval}
+![Lembar kerja untuk menilai model.](aset/eval-model.png){#fig-model-eval fig-align="center" width="40%"}
 
 Lembar kerja untuk memodelkan perubahan suhu permukaan bumi dan mengevaluasinya. Di lembar kerja kedua, mahasiswa secara langsung mendapatkan umpan balik tentang seberapa baik modelnya.
 :::
@@ -29,9 +29,9 @@ Lembar kerja untuk memodelkan perubahan suhu permukaan bumi dan mengevaluasinya.
 Setelah itu, mahasiswa diminta untuk menjawab bagaimana suhu permukaan bumi secara umum pada periode 1880--2022 berdasarkan model yang telah mereka buat. Harapannya, mereka akan menjawab cukup dingin atau sedang. Jawaban tersebut kemudian 'dibantah' dengan penyajian diagram lain yang juga menyatakan perubahan suhu permukaan bumi setiap tahunnya, tetapi dengan garis dasar yang berbeda. Bantahan ini diharapkan dapat memberikan disonansi kognitif kepada mahasiswa agar berpikir kritis dalam menilai keadaan suhu permukaan bumi sebenarnya. Perhatikan @fig-disonansi-kognitif.
 
 ::: {#fig-disonansi-kognitif layout-ncol="2"}
-![Lembar kerja untuk menilai seberapa dingin suhu permukaan bumi.](aset/assess-temp.png){#fig-seberapa-dingin}
+![Lembar kerja untuk menilai seberapa dingin suhu permukaan bumi.](aset/assess-temp.png){#fig-seberapa-dingin fig-align="center" width="40%"}
 
-![Penyajian data dari sumber lain dengan garis dasar yang berbeda.](aset/comparing.png){#fig-sumber-lain}
+![Penyajian data dari sumber lain dengan garis dasar yang berbeda.](aset/comparing.png){#fig-sumber-lain fig-align="center" width="40%"}
 
 Penciptaan disonansi kognitif yang mendorong mahasiswa untuk berpikir kritis dalam penyajian dan interpretasi data.
 :::
@@ -48,32 +48,60 @@ Setelah kegiatan pendahuluan dilakukan, pembelajaran dilanjutkan ke dalam kegiat
 
 Tahapan pertama tersebut merupakan pintu masuk bagi mahasiswa untuk melakukan matematisasi, horizontal maupun vertikal, terhadap gagasan matematis berikutnya. Untuk itu, setiap permasalahan yang diajukan perlu sesuai dengan kebutuhan intelektual mahasiswa agar permasalahan tersebut betul-betul realistik bagi mahasiswa tersebut. Pemetaan kebutuhan intelektual dan rumusan permasalahan yang diajukan untuk setiap topiknya dapat dilihat pada @tbl-kebutuhan-intelektual berikut.
 
-| Aktivitas Pembelajaran           | Kebutuhan Intelektual                                                                                       | Masalah Pemantik                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|------------------|------------------|-------------------------------------|
-| Pergeseran vertikal              | Kebutuhan akan mengganti garis dasar pengukuran perubahan suhu, dari periode 1991--2020 menjadi 1951--1980. | \[Diberikan grafik warna biru.\] Grafik warna biru, $y=T(x)$, merupakan model perubahan suhu global relatif terhadap rerata pada tahun 1991--2020. Sketsalah grafik perubahan suhu global relatif terhadap rerata pada tahun 1951--1980 pada periode yang sama! Rerata suhu global pada tahun 1951--1980 lebih rendah 0,6°C daripada rerata 1991--2020.                                                                                                                                                                              |
-| Pergeseran horizontal            | Kebutuhan akan pembuatan grafik yang dimulai dari sumbu-$y$.                                                | Karuna ingin agar di dalam sketsa grafiknya, dia dapat melihat sumbu-$y$. Mainkan animasinya untuk melihat apa yang dia lakukan! \[Diberikan animasi tentang apa yang dilakukan Karuna.\]                                                                                                                                                                                                                                                                                                                                            |
-| Pemampatan/peregangan vertikal   | Kebutuhan akan konversi satuan suhu, dari derajat Celcius ke derajat Fahrenheit.                            | Emily akan menyampaikan grafiknya Karuna ke teman-temannya di AS. Karena teman-temannya terbiasa dengan satuan derajat Fahrenheit (°F), dia akan menyesuaikan grafiknya Karuna sehingga satuannya menjadi °F. Bantu Emily untuk mensketsa grafiknya! Petunjuk: Skala Fahrenheit $\frac{9}{5}$ kalinya skala Celcius.                                                                                                                                                                                                                 |
-| Pemampatan/peregangan horizontal | Kebutuhan akan penyamaan skala antara sumbu-$x$ dan sumbu-$y$.                                              | Emily masih belum puas dengan hasilnya. Dia mengamati bahwa ada kejanggalan di sumbu-$x$ dan $y$. Tapi dia tidak bisa membahasakannya. Apa kalian juga melihat kejanggalannya? Jika belum, klik tombol 'Petunjuk'. Deskripsikan kejanggalan tersebut! \[Harapannya, mahasiswa melihat bahwa skala dalam sumbu-$x$ dan $y$ tidak sama.\] Apa yang dilakukan Emily untuk menyelesaikan kejanggalannya? Silakan cermati dan analisis strateginya! \[Diberikan animasi bahwa Emily membuat grafik dengan skala sumbu-$x$ yang berbeda.\] |
+| Aktivitas Pembelajaran            | Kebutuhan Intelektual                                                                                       | Masalah Pemantik                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|------------------|------------------|------------------------------------|
+| Pergeseran vertikal               | Kebutuhan akan mengganti garis dasar pengukuran perubahan suhu, dari periode 1991--2020 menjadi 1951--1980. | \[Diberikan grafik warna biru.\] Grafik warna biru, $y=T(x)$, merupakan model perubahan suhu global relatif terhadap rerata pada tahun 1991--2020. Sketsalah grafik perubahan suhu global relatif terhadap rerata pada tahun 1951--1980 pada periode yang sama! Rerata suhu global pada tahun 1951--1980 lebih rendah 0,6°C daripada rerata 1991--2020.                                                                                                                                                                              |
+| Pergeseran horizontal             | Kebutuhan akan pembuatan grafik yang dimulai dari sumbu-$y$.                                                | Karuna ingin agar di dalam sketsa grafiknya, dia dapat melihat sumbu-$y$. Mainkan animasinya untuk melihat apa yang dia lakukan! \[Diberikan animasi tentang apa yang dilakukan Karuna.\]                                                                                                                                                                                                                                                                                                                                            |
+| Pemampatan/ peregangan vertikal   | Kebutuhan akan konversi satuan suhu, dari derajat Celcius ke derajat Fahrenheit.                            | Emily akan menyampaikan grafiknya Karuna ke teman-temannya di AS. Karena teman-temannya terbiasa dengan satuan derajat Fahrenheit (°F), dia akan menyesuaikan grafiknya Karuna sehingga satuannya menjadi °F. Bantu Emily untuk mensketsa grafiknya! Petunjuk: Skala Fahrenheit $\frac{9}{5}$ kalinya skala Celcius.                                                                                                                                                                                                                 |
+| Pemampatan/ peregangan horizontal | Kebutuhan akan penyamaan skala antara sumbu-$x$ dan sumbu-$y$.                                              | Emily masih belum puas dengan hasilnya. Dia mengamati bahwa ada kejanggalan di sumbu-$x$ dan $y$. Tapi dia tidak bisa membahasakannya. Apa kalian juga melihat kejanggalannya? Jika belum, klik tombol 'Petunjuk'. Deskripsikan kejanggalan tersebut! \[Harapannya, mahasiswa melihat bahwa skala dalam sumbu-$x$ dan $y$ tidak sama.\] Apa yang dilakukan Emily untuk menyelesaikan kejanggalannya? Silakan cermati dan analisis strateginya! \[Diberikan animasi bahwa Emily membuat grafik dengan skala sumbu-$x$ yang berbeda.\] |
 
 : Kebutuhan intelektual dan masalah dalam setiap aktivitas pembelajaran inti dalam "Matematika Membumi: Seberapa Panas Bumi Kita?" {#tbl-kebutuhan-intelektual}
 
-## Implementasi Pembelajaran dan Hasilnya
+## Implementasi Pembelajaran
 
-Model orkestrasi diskusi matematis produktif digunakan dalam persiapan dan implementasi pembelajaran klasikal. Dengan model ini, kegiatan persiapan dan implementasi tersebut dibagi menjadi lima tahapan, yaitu (a) antisipasi, (b) pemantauan, (c) pemilihan, (d) pengurutan, dan (e) pengkoneksian.
+Model orkestrasi diskusi matematis produktif digunakan dalam persiapan dan implementasi pembelajaran klasikal. Dengan model ini, kegiatan persiapan dan implementasi tersebut dibagi menjadi lima tahapan, yaitu (a) antisipasi, (b) pemantauan, (c) pemilihan, (d) pengurutan, dan (e) pengoneksian.
 
 Tahapan antisipasi dilakukan sebelum pelaksanaan pembelajaran. Pada tahap ini, dosen mengantisipasi variasi kemungkinan jawaban dan respons mahasiswa terhadap aktivitas pembelajaran yang dikembangkan. Dalam melakukan hal ini, dosen mengembangkan alur pembelajaran hipotetis yang mungkin dapat dilakukan oleh mahasiswa.
 
 Tahapan pemantauan dan seterusnya dilakukan pada saat pelaksanaan pembelajaran. Pada tahapan pemantauan, dosen memantau jalannya diskusi yang dilakukan oleh mahasiswa, baik secara daring maupun luring. Pemantauan secara daring dilakukan melalui dasbor guru yang disediakan oleh Desmos. Dasbor tersebut menampilkan respons mahasiswa terhadap permasalahan yang diajukan dalam aktivitas pembelajaran digital. Sebagai contoh, @fig-respons-mahasiswa menampilkan respons para mahasiswa tentang seberapa panas suhu permukaan bumi pada tahun 1880--2022 dan respons mereka terhadap pergantian garis dasar pengukuran perubahan suhu permukaan bumi.
 
 ::: {#fig-respons-mahasiswa layout-ncol="2"}
-![Respons mahasiswa tentang suhu permukaan bumi pada periode 1880--2022.](aset/respons-suhu-bumi.png){#fig-respons-suhu-bumi}
+![Respons mahasiswa tentang suhu permukaan bumi pada periode 1880--2022.](aset/respons-suhu-bumi.png){#fig-respons-suhu-bumi fig-align="center" width="40%"}
 
-![Respons mahasiswa tentang strategi dalam penggantian garis dasar dari periode 1991--2020 menjadi 1951--1980.](aset/respons-pergeseran-vertikal.png){#fig-respons-pergeseran-vertikal}
+![Respons mahasiswa tentang strategi dalam penggantian garis dasar dari periode 1991--2020 menjadi 1951--1980.](aset/respons-pergeseran-vertikal.png){#fig-respons-pergeseran-vertikal fig-align="center" width="40%"}
 
 Respons mahasiswa yang ditampilkan dalam dasbor guru Desmos.
 :::
 
-Pemantauan secara luring dilakukan dosen dengan mengunjungi setiap kelompok untuk mengetahui penjelasan secara lebih detail terhadap pekerjaan mahasiswa. Selain itu, dosen juga memberikan topangan dan umpan balik terhadap pekerjaan mahasiswa. Gambar menunjukkan potret dosen yang sedang memberikan topangan dan umpan balik terhadap salah satu kelompok.
+Pemantauan secara luring dilakukan dosen dengan mengunjungi setiap kelompok untuk mengetahui penjelasan mahasiswa secara lebih detail terhadap pekerjaannya. Dengan demikian, pada tahapan ini dosen mengetahui variasi respons mahasiswa terhadap aktivitas pembelajaran yang dikembangkan. Selain itu, dosen juga memberikan topangan dan umpan balik terhadap pekerjaan mahasiswa. @fig-pemantauan menunjukkan potret dosen yang sedang memberikan topangan dan umpan balik terhadap salah satu kelompok.
+
+![Dosen memantau pekerjaan salah satu kelompok.](aset/pemantauan.JPG){#fig-pemantauan fig-align="center" width="60%"}
+
+Tahapan ketiga adalah pemilihan. Pada tahap pemilihan ini, dosen menentukan kelompok-kelompok mana yang akan membagikan pekerjaannya. Pemilihan kelompok tersebut didasarkan pada tujuan pembelajaran dan hasil pemantauan pada tahapan sebelumnya.
+
+Tahapan keempat adalah pengurutan. Pengurutan yang dimaksud di sini adalah pengaturan urutan presentasi bagi kelompok-kelompok yang terpilih untuk membagikan pekerjaannya. Pengurutan tersebut diatur sedemikian sehingga memberikan manfaat pedagogis yang optimal. Sebagai contoh, @fig-pengurutan-daring memotret pengurutan kelompok presenter yang dilakukan secara daring ketika menilai seberapa panas suhu permukaan bumi. Pengurutan tersebut menggunakan fitur snapshot yang ada dalam dasbor guru Desmos.
+
+::: {#fig-pengurutan-daring layout-ncol="2"}
+![Pekerjaan kelompok presenter pertama.](aset/pengurutan-1.png){#fig-urutan-presenter-1 fig-align="center" width="40%"}
+
+![Pekerjaan kelompok presenter kedua](aset/pengurutan-2.png){#fig-urutan-presenter-2 fig-align="center" width="40%"}
+
+Pengurutan dengan bantuan fitur snapshot dalam dasbor guru Desmos.
+:::
+
+Setelah pengurutan selesai dilakukan, mahasiswa kemudian mempresentasikan hasil pekerjaannya. Ketika presentasi mereka tidak hanya membaca apa yang telah mereka tuliskan pada lembar kerja digitalnya tetapi memberikan penjelasan secara lebih detail tentang pekerjaannya tersebut. @fig-presentasi menunjukkan dua kelompok yang sedang mempresentasikan hasil pekerjannya.
+
+::: {#fig-presentasi layout-ncol="2"}
+![Presenter pertama.](aset/presenter-1.JPG){#fig-presenter-1 fig-align="center" width="40%"}
+
+![Presenter kedua.](aset/presenter-2.JPG){#fig-presenter-2 fig-align="center" width="40%"}
+
+Dua presenter secara bergantian mempresentasikan hasil pekerjaannya secara klasikal.
+:::
+
+Tahapan terakhir adalah adalah pengoneksian. Pada tahap ini, dosen mengoneksikan pekerjaan para presenter yang membagikan pekerjaannya. Tujuan tahap ini adalah menggunakan dan mengoneksikan pekerjaan mahasiswa yang telah dipresentasikan untuk mencapai tujuan pembelajaran yang telah ditetapkan. Pengoneksian ini dilakukan secara langsung maupun tidak langsung dengan pengajuan pertanyaan kepada mahasiswa. @fig-koneksi menunjukkan potret diskusi klasikal ketika dosen mengoneksikan pekerjaan kelompok mahasiswa presenter.
+
+![Dosen mengoneksikan pekerjaan kelompok mahasiswa presenter.](aset/koneksi.JPG){#fig-koneksi fig-align="center" width="60%"}
 
 ## Dampak Pengiring: Hasil Refleksi Mahasiswa
 
