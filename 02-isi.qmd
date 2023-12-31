@@ -6,6 +6,86 @@ bibliography: references.bib
 
 Bagian isi ini memaparkan tiga hal. Pertama adalah pemaparan tentang desain pembelajaran. Kedua merupakah pemaparan hasil implementasi desain tersebut. Ketiga adalah pembahasan.
 
-## Desain Pembelajaran
+## Desain Pembelajaran: Dari Kurikulum Makro ke Mikro
 
-Desain pembelajaran yang dideskripsikan di makalah ini merupakan satu dari banyak aktivitas pembelajaran digital berbasis pendidikan matematika realistik yang dikembangkan dalam rangka mengimajinasikan kembali mata kuliah Aljabar dan Trigonometri di program studi Pendidikan Matematika, Universitas Sanata Dharma, Yogyakarta. Aktivitas-aktivitas pembelajaran digital tersebut dikembangkan dengan menggunakan Desmos [@kristanto2019a; @kristanto2019b; @kristanto2021] dan dapat diakses secara terbuka di <https://teacher.desmos.com/collection/651e23c943f200bd64d30bb1?lang=id>.
+### Kurikulum Makro: Prinsip-Prinsip Desain Pembelajaran Aljabar dan Trigonometri
+
+Desain pembelajaran yang dideskripsikan di makalah ini merupakan satu dari banyak aktivitas pembelajaran digital berbasis pendidikan matematika realistik yang dikembangkan dalam rangka mengimajinasikan kembali mata kuliah Aljabar dan Trigonometri di program studi Pendidikan Matematika, Universitas Sanata Dharma, Yogyakarta. Aktivitas-aktivitas pembelajaran digital tersebut dikembangkan dengan menggunakan Desmos [@kristanto2019a; @kristanto2019b; @kristanto2021] dan dapat diakses secara terbuka di <https://s.id/aljbr-trig-realistik>.
+
+Semua aktivitas pembelajaran dalam mata kuliah tersebut dikembangkan dengan mengikuti enam prinsip desain pengajaran. Keenam prinsip tersebut dirangkum dalam @tbl-prinsip-aljabar-trigonometri.
+
+| No  | Prinsip                              | Deskripsi                                                                                                                                                                                |
+|------------|------------|-----------------------------------------------|
+| 1\. | Prinsip pembagian otoritas           | Dosen membagi otoritas matematisnya [@hicks2023] kepada mahasiswa melalui orkestrasi diskursus yang produktif [@stein2008], baik dalam kelompok kecil maupun diskusi klasikal.           |
+| 2\. | Prinsip kebutuhan intelektual        | Aktivitas-aktivitas pembelajaran yang dikembangkan perlu memfasilitasi mahasiswa untuk melakukan matematisasi yang dimulai dengan adanya kebutuhan intelektual [@harel2013].             |
+| 3\. | Prinsip kecakapan matematis          | Aktivitas-aktivitas pembelajaran yang dikembangkan perlu memfasilitasi mahasiswa untuk menggunakan pemahaman konseptualnya dalam membangun kefasihan proseduralnya [@nctm2014].          |
+| 4\. | Prinsip penemuan pengetahuan         | Aktivitas-aktivitas pembelajaran yang dikembangkan perlu memfasilitasi mahasiswa untuk melalui proses seperti yang dilalui oleh para ilmuwan untuk membangun atau menemukan pengetahuan. |
+| 5\. | Prinsip cara berpikir                | Aktivitas pembelajaran membimbing mahasiswa untuk mengembangkan penalaran kuantitatif, kovarian, dan pemikiran bentuk grafik dinamis selama melakukan proses ilmiah [@paoletti2023].     |
+| 6\. | Prinsip penggunaan teknologi dinamis | Penggunaan teknologi sifatnya membantu kognisi mahasiswa dan berperan sebagai alat penguat dan reorganisasi terhadap masalah-masalah yang dinamis [@pea1987].                            |
+
+: Enam prinsip desain pengajaran dalam mata kuliah Aljabar dan Trigonometri {#tbl-prinsip-aljabar-trigonometri}
+
+### Kurikulum Mikro: Alur Tujuan Pembelajaran untuk Topik Transformasi Fungsi
+
+Pembahasan desain dan implementasi pembelajaran dalam makalah ini berfokus pada topik transformasi fungsi. Hal ini dikarenakan dua alasan. Pertama, topik transformasi fungsi merupakan salah satu topik terpenting dalam Aljabar dan Trigonometri karena topik ini selalu diterapkan dalam topik-topik lain dalam mata kuliah tersebut. Kedua, topik ini memuat konsep-konsep yang kaya bagi mahasiswa untuk membangun dan mengembangkan landasan bernalar tentang kuantitas dan relasi antarkuantitas. Penalaran tersebut merupakan penalaran yang fokus dikembangkan dalam mata kuliah Aljabar dan Trigonometri.
+
+Rangkaian aktivitas pembelajaran dalam topik transformasi fungsi memiliki judul "Matematika Membumi: Seberapa Panas Bumi Kita?" dan dapat diakses melalui tautan <https://s.id/matematika-membumi>. Frasa 'matematika membumi' dipilih sebagai judul rangkaian aktivitas tersebut karena dua tujuan. Pertama, aktivitas tersebut bertujuan untuk membumikan matematika agar matematika tampak riil atau realistik bagi mahasiswa. Kedua, aktivitas pembelajaran tersebut menggunakan konteks planet bumi agar mahasiswa memiliki kesadaran akan permasalahan-permasalahan nyata dan mendesak yang dihadapi oleh planet yang ditinggalinya.
+
+Rangkaian aktivitas pembelajaran topik transformasi fungsi diawali dengan kegiatan pendahuluan. Kegiatan tersebut dimulai dengan aktivitas mengamati dan bertanya-tanya (*notice and wondering*) untuk menyiapkan mahasiswa dalam menyelidiki perubahan suhu rata-rata permukaan bumi mulai dari tahun 1880--2022. Di dalam kegiatan ini, mahasiswa diminta untuk mengamati animasi yang menunjukkan visualisasi data suhu permukaan bumi setiap tahunnya. Cuplikan animasi tersebut ditunjukkan pada @fig-notice-wondering.
+
+![Mahasiswa mengamati dan bertanya-tanya di layar pertama.](aset/notice-wondering.png){#fig-notice-wondering}
+
+Berdasarkan pengamatan dan pertanyaan yang telah diajukan, mahasiswa kemudian memodelkan perubahan suhu permukaan bumi setiap tahunnya dan mengevaluasi seberapa baik model yang telah dibuatnya. Aktivitas yang dilakukan oleh mahasiswa pada tahap ini ditunjukkan pada @fig-model-and-eval.
+
+::: {#fig-model-and-eval layout-ncol="2"}
+![Lembar kerja untuk memodelkan perubahan suhu setiap tahunnya.](aset/modelling.png){#fig-modelling}
+
+![Lembar kerja untuk menilai model.](aset/eval-model.png){#fig-model-eval}
+
+Lembar kerja untuk memodelkan perubahan suhu permukaan bumi dan mengevaluasinya. Di lembar kerja kedua, mahasiswa secara langsung mendapatkan umpan balik tentang seberapa baik modelnya.
+:::
+
+Setelah itu, mahasiswa diminta untuk menjawab bagaimana suhu permukaan bumi secara umum pada periode 1880--2022 berdasarkan model yang telah mereka buat. Harapannya, mereka akan menjawab cukup dingin atau sedang. Jawaban tersebut kemudian 'dibantah' dengan penyajian diagram lain yang juga menyatakan perubahan suhu permukaan bumi setiap tahunnya, tetapi dengan garis dasar yang berbeda. Bantahan ini diharapkan dapat memberikan disonansi kognitif kepada mahasiswa agar berpikir kritis dalam menilai keadaan suhu permukaan bumi sebenarnya. Perhatikan @fig-disonansi-kognitif.
+
+::: {#fig-disonansi-kognitif layout-ncol="2"}
+![Lembar kerja untuk menilai seberapa dingin suhu permukaan bumi.](aset/assess-temp.png){#fig-seberapa-dingin}
+
+![Penyajian data dari sumber lain dengan garis dasar yang berbeda.](aset/comparing.png){#fig-sumber-lain}
+
+Penciptaan disonansi kognitif yang mendorong mahasiswa untuk berpikir kritis dalam penyajian dan interpretasi data.
+:::
+
+Kegiatan pendahuluan tersebut bertujuan untuk memanggil kembali kemampuan dan pemahaman awal mahasiswa tentang relasi antara dua kuantitas dan merepresentasikannya ke dalam sebuah grafik. Kemampuan dan pemahaman awal tentang relasi dan grafiknya tersebut penting untuk membangun pengetahuan tentang transformasi fungsi di aktivitas-aktivitas berikutnya.
+
+Setelah kegiatan pendahuluan dilakukan, pembelajaran dilanjutkan ke dalam kegiatan inti yang terdiri dari empat topik utama, yaitu (a) pergeseran vertikal, (b) pergeseran horizontal, (c) pemampatan/peregangan vertikal, dan (d) pemampatan/peregangan horizontal grafik fungsi. Alur pembelajaran keempat topik tersebut serupa. Alur tersebut terdiri dari tiga tahapan, yaitu
+
+1.  pemberian masalah untuk menciptakan kebutuhan intelektual bagi mahasiswa akan gagasan matematis yang akan ditemukan;
+
+2.  pengamatan terhadap matematika dinamis untuk mengamati kuantitas-kuantitas yang berhubungan dalam fungsi dan hasil transformasinya; dan
+
+3.  pembuatan simpulan dan justifikasi terhadap simpulan tersebut.
+
+Tahapan pertama tersebut merupakan pintu masuk bagi mahasiswa untuk melakukan matematisasi, horizontal maupun vertikal, terhadap gagasan matematis berikutnya. Untuk itu, setiap permasalahan yang diajukan perlu sesuai dengan kebutuhan intelektual mahasiswa agar permasalahan tersebut betul-betul realistik bagi mahasiswa tersebut. Pemetaan kebutuhan intelektual dan rumusan permasalahan yang diajukan untuk setiap topiknya dapat dilihat pada @tbl-kebutuhan-intelektual berikut.
+
+| Aktivitas Pembelajaran           | Kebutuhan Intelektual                                                                                       | Masalah                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|--------------|--------------|---------------------------------------------|
+| Pergeseran vertikal              | Kebutuhan akan mengganti garis dasar pengukuran perubahan suhu, dari periode 1991--2020 menjadi 1951--1980. | \[Diberikan grafik warna biru.\] Grafik warna biru, $y=T(x)$, merupakan model perubahan suhu global relatif terhadap rerata pada tahun 1991--2020. Sketsalah grafik perubahan suhu global relatif terhadap rerata pada tahun 1951--1980 pada periode yang sama! Rerata suhu global pada tahun 1951--1980 lebih rendah 0,6°C daripada rerata 1991--2020.                                                                                                                                                                              |
+| Pergeseran horizontal            | Kebutuhan akan pembuatan grafik yang dimulai dari sumbu-$y$.                                                | Karuna ingin agar di dalam sketsa grafiknya, dia dapat melihat sumbu-$y$. Mainkan animasinya untuk melihat apa yang dia lakukan! \[Diberikan animasi tentang apa yang dilakukan Karuna.\]                                                                                                                                                                                                                                                                                                                                            |
+| Pemampatan/peregangan vertikal   | Kebutuhan akan konversi satuan suhu, dari derajat Celcius ke derajat Fahrenheit.                            | Emily akan menyampaikan grafiknya Karuna ke teman-temannya di AS. Karena teman-temannya terbiasa dengan satuan derajat Fahrenheit (°F), dia akan menyesuaikan grafiknya Karuna sehingga satuannya menjadi °F. Bantu Emily untuk mensketsa grafiknya! Petunjuk: Skala Fahrenheit $\frac{9}{5}$ kalinya skala Celcius.                                                                                                                                                                                                                 |
+| Pemampatan/peregangan horizontal | Kebutuhan akan penyamaan skala antara sumbu-$x$ dan sumbu-$y$.                                              | Emily masih belum puas dengan hasilnya. Dia mengamati bahwa ada kejanggalan di sumbu-$x$ dan $y$. Tapi dia tidak bisa membahasakannya. Apa kalian juga melihat kejanggalannya? Jika belum, klik tombol 'Petunjuk'. Deskripsikan kejanggalan tersebut! \[Harapannya, mahasiswa melihat bahwa skala dalam sumbu-$x$ dan $y$ tidak sama.\] Apa yang dilakukan Emily untuk menyelesaikan kejanggalannya? Silakan cermati dan analisis strateginya! \[Diberikan animasi bahwa Emily membuat grafik dengan skala sumbu-$x$ yang berbeda.\] |
+
+: Kebutuhan intelektual dan masalah dalam setiap aktivitas pembelajaran inti dalam "Matematika Membumi: Seberapa Panas Bumi Kita?" {#tbl-kebutuhan-intelektual}
+
+## Implementasi Pembelajaran
+
+### Implementasi Pembelajaran Klasikal
+
+Model orkestrasi diskusi matematis produktif digunakan dalam persiapan dan implementasi pembelajaran klasikal. Dengan model ini, kegiatan persiapan dan implementasi tersebut dibagi menjadi lima tahapan, yaitu (a) antisipasi, (b) pemantauan, (c) pemilihan, (d) pengurutan, dan (e) pengkoneksian.
+
+Pada tahapan antisipasi, dosen mengantisipasi variasi kemungkinan jawaban dan respons mahasiswa terhadap aktivitas pembelajaran yang dikembangkan.
+
+### Studi Kasus Agatha dan Aurelia
+
+## Dampak Pengiring: Hasil Refleksi Mahasiswa
+
+## Pembahasan

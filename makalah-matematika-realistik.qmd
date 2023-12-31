@@ -1,5 +1,5 @@
 ---
-title: "Matematika Membumi: Ketika Matematika Realistik Berjumpa dengan Permasalahan Planet Bumi dan Teknologi"
+title: "Matematika Membumi: Ketika Matematika Realistik Bertemu dengan Permasalahan Planet Bumi dan Teknologi"
 author:
 - name: Yosep Dwi Kristanto
   url: https://people.usd.ac.id/~ydkristanto/
@@ -14,6 +14,7 @@ format:
   docx:
     reference-doc: custom-reference-doc.docx
     number-sections: true
+    link-citations: true
 editor: visual
 bibliography: references.bib
 csl: apa.csl
