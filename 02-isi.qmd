@@ -6,7 +6,7 @@ bibliography: references.bib
 
 Bagian isi ini memaparkan tiga hal. Pertama adalah pemaparan tentang desain pembelajaran. Kedua merupakah pemaparan hasil implementasi desain tersebut. Ketiga adalah pembahasan.
 
-## Desain Pembelajaran
+## Desain Pembelajaran {#sec-desain-pembelajaran}
 
 Pemaparan desain dan implementasi pembelajaran dalam makalah ini berfokus pada topik transformasi fungsi. Hal ini dikarenakan dua alasan. Pertama, topik transformasi fungsi merupakan salah satu topik terpenting dalam Aljabar dan Trigonometri karena topik ini selalu diterapkan dalam topik-topik lain dalam mata kuliah tersebut. Kedua, topik ini memuat konsep-konsep yang kaya bagi mahasiswa untuk membangun dan mengembangkan landasan bernalar tentang kuantitas dan relasi antarkuantitas. Penalaran tersebut merupakan penalaran yang fokus dikembangkan dalam mata kuliah Aljabar dan Trigonometri.
 
@@ -49,7 +49,7 @@ Setelah kegiatan pendahuluan dilakukan, pembelajaran dilanjutkan ke dalam kegiat
 Tahapan pertama tersebut merupakan pintu masuk bagi mahasiswa untuk melakukan matematisasi, horizontal maupun vertikal, terhadap gagasan matematis berikutnya. Untuk itu, setiap permasalahan yang diajukan perlu sesuai dengan kebutuhan intelektual mahasiswa agar permasalahan tersebut betul-betul realistik bagi mahasiswa tersebut. Pemetaan kebutuhan intelektual dan rumusan permasalahan yang diajukan untuk setiap topiknya dapat dilihat pada @tbl-kebutuhan-intelektual berikut.
 
 | Aktivitas Pembelajaran            | Kebutuhan Intelektual                                                                                       | Masalah Pemantik                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|------------------|------------------|------------------------------------|
+|-------------------|-------------------|----------------------------------|
 | Pergeseran vertikal               | Kebutuhan akan mengganti garis dasar pengukuran perubahan suhu, dari periode 1991--2020 menjadi 1951--1980. | \[Diberikan grafik warna biru.\] Grafik warna biru, $y=T(x)$, merupakan model perubahan suhu global relatif terhadap rerata pada tahun 1991--2020. Sketsalah grafik perubahan suhu global relatif terhadap rerata pada tahun 1951--1980 pada periode yang sama! Rerata suhu global pada tahun 1951--1980 lebih rendah 0,6°C daripada rerata 1991--2020.                                                                                                                                                                              |
 | Pergeseran horizontal             | Kebutuhan akan pembuatan grafik yang dimulai dari sumbu-$y$.                                                | Karuna ingin agar di dalam sketsa grafiknya, dia dapat melihat sumbu-$y$. Mainkan animasinya untuk melihat apa yang dia lakukan! \[Diberikan animasi tentang apa yang dilakukan Karuna.\]                                                                                                                                                                                                                                                                                                                                            |
 | Pemampatan/ peregangan vertikal   | Kebutuhan akan konversi satuan suhu, dari derajat Celcius ke derajat Fahrenheit.                            | Emily akan menyampaikan grafiknya Karuna ke teman-temannya di AS. Karena teman-temannya terbiasa dengan satuan derajat Fahrenheit (°F), dia akan menyesuaikan grafiknya Karuna sehingga satuannya menjadi °F. Bantu Emily untuk mensketsa grafiknya! Petunjuk: Skala Fahrenheit $\frac{9}{5}$ kalinya skala Celcius.                                                                                                                                                                                                                 |
@@ -57,52 +57,44 @@ Tahapan pertama tersebut merupakan pintu masuk bagi mahasiswa untuk melakukan ma
 
 : Kebutuhan intelektual dan masalah dalam setiap aktivitas pembelajaran inti dalam "Matematika Membumi: Seberapa Panas Bumi Kita?" {#tbl-kebutuhan-intelektual}
 
-## Implementasi Pembelajaran
+## Implementasi Pembelajaran: Kasus Agatha dan Aurelia
 
-Model orkestrasi diskusi matematis produktif digunakan dalam persiapan dan implementasi pembelajaran klasikal. Dengan model ini, kegiatan persiapan dan implementasi tersebut dibagi menjadi lima tahapan, yaitu (a) antisipasi, (b) pemantauan, (c) pemilihan, (d) pengurutan, dan (e) pengoneksian.
+Pemaparan implementasi pembelajaran dalam bagian ini berfokus pada satu kelompok yang beranggotakan dua mahasiswa, yaitu Agatha dan Aurelia (nama samaran). Pembelajaran yang dialami kelompok tersebut digunakan sebagai ilustrasi bagaimana desain pembelajaran yang dikembangkan dapat membantu kedua mahasiswa tersebut dalam menemukan sendiri prinsip pergeseran vertikal grafik fungsi, salah satu topik yang dideskripsikan pada @sec-desain-pembelajaran. Agatha dan Aurelia merupakan dua dari 21 mahasiswa yang mengikuti pembelajaran topik transformasi fungsi.
 
-Tahapan antisipasi dilakukan sebelum pelaksanaan pembelajaran. Pada tahap ini, dosen mengantisipasi variasi kemungkinan jawaban dan respons mahasiswa terhadap aktivitas pembelajaran yang dikembangkan. Dalam melakukan hal ini, dosen mengembangkan alur pembelajaran hipotetis yang mungkin dapat dilakukan oleh mahasiswa.
+Data yang digunakan adalah video rekaman percakapan dan siaran layar lembar kerja digital kedua mahasiswa tersebut selama jam perkuliahan. Gambar berikut menunjukkan pengambilan video kedua mahasiswa tersebut ketika melakukan diskusi.
 
-Tahapan pemantauan dan seterusnya dilakukan pada saat pelaksanaan pembelajaran. Pada tahapan pemantauan, dosen memantau jalannya diskusi yang dilakukan oleh mahasiswa, baik secara daring maupun luring. Pemantauan secara daring dilakukan melalui dasbor guru yang disediakan oleh Desmos. Dasbor tersebut menampilkan respons mahasiswa terhadap permasalahan yang diajukan dalam aktivitas pembelajaran digital. Sebagai contoh, @fig-respons-mahasiswa menampilkan respons para mahasiswa tentang seberapa panas suhu permukaan bumi pada tahun 1880--2022 dan respons mereka terhadap pergantian garis dasar pengukuran perubahan suhu permukaan bumi.
+![Pengambilan video Agatha dan Aurelia ketika berdiskusi dan mengerjakan lembar kerja digital.](aset/pengambilan-video.JPG){#fig-pengambilan-video fig-align="center" width="60%"}
 
-::: {#fig-respons-mahasiswa layout-ncol="2"}
-![Respons mahasiswa tentang suhu permukaan bumi pada periode 1880--2022.](aset/respons-suhu-bumi.png){#fig-respons-suhu-bumi fig-align="center" width="40%"}
+### Kegiatan Pendahuluan
 
-![Respons mahasiswa tentang strategi dalam penggantian garis dasar dari periode 1991--2020 menjadi 1951--1980.](aset/respons-pergeseran-vertikal.png){#fig-respons-pergeseran-vertikal fig-align="center" width="40%"}
+Berhadapan dengan lembar kerja digital yang disediakan, Agatha dan Aurelia langsung mengamati animasi perubahan suhu permukaan setiap tahunnya dan kemudian mendiskusikannya. Setelah itu, mereka mengamati dan mendiskusikan visualisasi model perubahan suhu permukaan bumi di layar kedua. Berdasarkan hasil diskusi tersebut, mereka mensketsa model perubahan suhu tersebut dengan terlebih dahulu memplot beberapa titik yang mewakili. Setelah itu, mereka mengganti plot titik-titik tersebut dengan kurva halus. Mereka menampakkan ekspresi gembira ketika mereka mengevaluasi model tersebut dan mendapatkan skor yang tinggi, yaitu 98,77%.
 
-Respons mahasiswa yang ditampilkan dalam dasbor guru Desmos.
-:::
+Pada layar berikutnya, mereka berdiskusi tentang bagaimana suhu permukaan bumi pada periode 1880--2022. Berdasarkan diskusi tersebut, mereka menganggap bahwa suhu permukaan bumi pada periode itu secara umum cukup dingin. Ketika mereka diminta menyampaikan alasannya kepada teman-temannya, Agatha menyampaikan alasan seperti berikut.
 
-Pemantauan secara luring dilakukan dosen dengan mengunjungi setiap kelompok untuk mengetahui penjelasan mahasiswa secara lebih detail terhadap pekerjaannya. Dengan demikian, pada tahapan ini dosen mengetahui variasi respons mahasiswa terhadap aktivitas pembelajaran yang dikembangkan. Selain itu, dosen juga memberikan topangan dan umpan balik terhadap pekerjaan mahasiswa. @fig-pemantauan menunjukkan potret dosen yang sedang memberikan topangan dan umpan balik terhadap salah satu kelompok.
+> Karena di tahun 1880 sampai 1980 warna pada model yang kami bikin, grafiknya, itu menunjukkan warna biru lebih mendominasi dibandingkan dengan warna putih dan warna merah. Jadi kami menyimpulkan bahwa, kalau dia warna biru kan dingin, jadi kami menyimpulkan bahwa itu cukup dingin.
 
-![Dosen memantau pekerjaan salah satu kelompok.](aset/pemantauan.JPG){#fig-pemantauan fig-align="center" width="60%"}
+Jawaban dan justifikasi Agatha dan Aurelia tersebut kurang lebih sama dengan mahasiswa-mahasiswa lainnya. Berdasarkan model yang diberikan, mereka menilai bahwa suhu permukaan bumi pada periode tersebut cukup dingin (8 kelompok) atau sedang (1 kelompok). Dalam menjawab, mahasiswa belum mempertimbangkan garis dasar yang digunakan untuk membuat model tersebut. Garis dasar yang dimaksud adalah suhu rata-rata permukaan bumi pada periode 1991--2020.
 
-Tahapan ketiga adalah pemilihan. Pada tahap pemilihan ini, dosen menentukan kelompok-kelompok mana yang akan membagikan pekerjaannya. Pemilihan kelompok tersebut didasarkan pada tujuan pembelajaran dan hasil pemantauan pada tahapan sebelumnya.
+Pada layar berikutnya, mereka diminta untuk mengamati dua grafik yang sama-sama menyajikan perubahan suhu permukaan bumi pada periode 1880--2022, tetapi dengan garis dasar yang berbeda (lihat @fig-sumber-lain). Dari diagram tersebut, mereka menyadari bahwa kedua grafik tersebut memiliki persamaan dan perbedaan. Demikian juga Agatha dan Aurelia. Mereka berdua setuju bahwa tren kedua grafik tersebut sama. Mereka juga menyadari perbedaan garis dasar kedua grafik tersebut sehingga menyebabkan, seperti yang dikatakan Agatha, "secara garis besar \[grafik sebelah kanan\] lebih tinggi \[daripada grafik sebelah kiri\]". Kesimpulan terakhir di kegiatan pendahuluan ini digunakan sebagai modal untuk menghadapi masalah di kegiatan pembelajaran berikutnya.
 
-Tahapan keempat adalah pengurutan. Pengurutan yang dimaksud di sini adalah pengaturan urutan presentasi bagi kelompok-kelompok yang terpilih untuk membagikan pekerjaannya. Pengurutan tersebut diatur sedemikian sehingga memberikan manfaat pedagogis yang optimal. Sebagai contoh, @fig-pengurutan-daring memotret pengurutan kelompok presenter yang dilakukan secara daring ketika menilai seberapa panas suhu permukaan bumi. Pengurutan tersebut menggunakan fitur snapshot yang ada dalam dasbor guru Desmos.
+### Menghadapi Masalah
 
-::: {#fig-pengurutan-daring layout-ncol="2"}
-![Pekerjaan kelompok presenter pertama.](aset/pengurutan-1.png){#fig-urutan-presenter-1 fig-align="center" width="40%"}
+Setelah cukup lama berdikusi mengenai masalah pemantik pada aktivitas pergeseran vertikal (perhatikan kembali @tbl-kebutuhan-intelektual), Aurelia memberikan pandangan kepada Agatha tentang bagaimana seharusnya grafik yang perlu disketsanya. Dia mengatakan bahwa, "grafiknya berarti lebih ke atas" sambil menunjukkan gestur menggerakkan tangannya ke atas memperagakan bahwa grafik barunya lebih di atas daripada grafik lama, seperti yang diperlihatkan @fig-menghadapi-masalah.
 
-![Pekerjaan kelompok presenter kedua](aset/pengurutan-2.png){#fig-urutan-presenter-2 fig-align="center" width="40%"}
+![Aurelia yang memberikan gestur menggerakkan tangan ke atas untuk mengilustrasikan gagasan matematisnya.](aset/menghadapi-masalah.png){#fig-menghadapi-masalah fig-align="center"}
 
-Pengurutan dengan bantuan fitur snapshot dalam dasbor guru Desmos.
-:::
+Agatha dan Aurelia kemudian mendiskusikan lagi tentang strategi melukis grafik yang baru. Berdasarkan diskusi tersebut, mereka memiliki jawaban sementara bahwa grafik barunya merupakan hasil perbesaran dari grafik lama. Sketsa grafik mereka dan alasannya ditunjukkan pada @fig-kirim-jawaban.
 
-Setelah pengurutan selesai dilakukan, mahasiswa kemudian mempresentasikan hasil pekerjaannya. Ketika presentasi mereka tidak hanya membaca apa yang telah mereka tuliskan pada lembar kerja digitalnya tetapi memberikan penjelasan secara lebih detail tentang pekerjaannya tersebut. @fig-presentasi menunjukkan dua kelompok yang sedang mempresentasikan hasil pekerjannya.
+![Sketsa Agatha dan Aurelia terkait dengan pergantian garis dasar dari periode 1991--2020 menjadi 1951--1980.](aset/kirim-jawaban.png){#fig-kirim-jawaban fig-align="center"}
 
-::: {#fig-presentasi layout-ncol="2"}
-![Presenter pertama.](aset/presenter-1.JPG){#fig-presenter-1 fig-align="center" width="40%"}
+### Bekerja dengan Matematika Dinamis
 
-![Presenter kedua.](aset/presenter-2.JPG){#fig-presenter-2 fig-align="center" width="40%"}
+Setelah menyelesaikan masalah pemantik, Agatha dan Aurelia mengamati animasi yang disedikan dalam lembar kerja yang menunjukkan bagaimana seharusnya mereka mensketsa grafik yang baru. Selain memberikan umpan balik korektif tentang hasil pekerjaan mereka, animasi tersebut memantik mereka untuk berpikir bagaimana cara memperoleh grafik yang baru dari grafik yang lama. Caranya adalah dengan menggeser grafik lama ke atas sejauh 0,6 satuan.
 
-Dua presenter secara bergantian mempresentasikan hasil pekerjaannya secara klasikal.
-:::
+### Pembuatan Kesimpulan dan Justifikasi
 
-Tahapan terakhir adalah adalah pengoneksian. Pada tahap ini, dosen mengoneksikan pekerjaan para presenter yang membagikan pekerjaannya. Tujuan tahap ini adalah menggunakan dan mengoneksikan pekerjaan mahasiswa yang telah dipresentasikan untuk mencapai tujuan pembelajaran yang telah ditetapkan. Pengoneksian ini dilakukan secara langsung maupun tidak langsung dengan pengajuan pertanyaan kepada mahasiswa. @fig-koneksi menunjukkan potret diskusi klasikal ketika dosen mengoneksikan pekerjaan kelompok mahasiswa presenter.
+Animasi yang diberikan oleh matematika dinamis memantik Agatha dan Aurelia untuk merumuskan hubungan antara fungsi lama dengan fungsi baru. Karena ketinggian grafik fungsi baru selalu lebih tinggi 0,6 satuan daripada ketinggian grafik fungsi yang lama, mereka menuliskan kesimpulan seperti yang ditunjukkan @fig-kesimpulan.
 
-![Dosen mengoneksikan pekerjaan kelompok mahasiswa presenter.](aset/koneksi.JPG){#fig-koneksi fig-align="center" width="60%"}
-
-## Dampak Pengiring: Hasil Refleksi Mahasiswa
+![Kesimpulan Agatha dan Aurelia serta justifikasinya.](aset/kesimpulan.png){#fig-kesimpulan fig-align="center"}
 
 ## Pembahasan
