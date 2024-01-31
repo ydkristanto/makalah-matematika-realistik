@@ -1,1 +1,3 @@
 # Lampiran
+
+Lampiran makalah ini, termasuk kode sumber dan sejarah perubahan naskahnya, dapat diakses di Github dengan alamat <https://github.com/ydkristanto/makalah-matematika-realistik>.
