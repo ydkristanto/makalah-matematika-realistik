@@ -1,0 +1,246 @@
+---
+title: "Matematika Membumi"
+subtitle: "Ketika Matematika Realistik Bertemu dengan Permasalahan Planet Bumi dan Teknologi"
+author: "Yosep Dwi Kristanto"
+format: revealjs
+filters: 
+  - quarto-ext/shinylive
+editor: visual
+---
+
+```{r}
+#| include: false
+
+library(tidyverse)
+```
+
+## Cakupan Presentasi
+
+-   Latar Belakang
+
+-   Prinsip-Prinsip Desain Pengajaran
+
+-   Desain Pembelajaran
+
+-   Pembahasan dan Simpulan
+
+## Ekspektasi
+
+Menunjukkan kemampuan numerasi dalam bernalar menggunakan konsep, prosedur, fakta dan alat matematika untuk menyelesaikan masalah yang berkaitan dengan diri, lingkungan terdekat, dan masyarakat sekitar.
+
+## Realita
+
+::: column-page-inset-right
+```{shinylive-r}
+#| standalone: true
+#| components: viewer
+#| viewerHeight: 500
+
+library(shiny)
+library(tidyverse)
+
+# Data
+data_matematika <- tribble(
+  ~negara,       ~tahun, ~skor_matematika, ~p_sig,
+  "Indonesia",   2003,   360,              FALSE,
+  "Indonesia",   2006,   391,              TRUE,
+  "Indonesia",   2009,   371,              FALSE,
+  "Indonesia",   2012,   375,              FALSE,
+  "Indonesia",   2015,   386,              TRUE,
+  "Indonesia",   2018,   379,              TRUE,
+  "Indonesia",   2022,   366,              FALSE,
+  "Singapura",   2003,   NA,               NA,
+  "Singapura",   2006,   NA,               NA,
+  "Singapura",   2009,   562,              NA,
+  "Singapura",   2012,   573,              NA,
+  "Singapura",   2015,   564,              NA,
+  "Singapura",   2018,   569,              NA,
+  "Singapura",   2022,   575,              NA,
+  "Jepang",      2003,   534,              NA,
+  "Jepang",      2006,   523,              NA,
+  "Jepang",      2009,   529,              NA,
+  "Jepang",      2012,   536,              NA,
+  "Jepang",      2015,   532,              NA,
+  "Jepang",      2018,   527,              NA,
+  "Jepang",      2022,   536,              NA,
+  "Korea",       2003,   542,              NA,
+  "Korea",       2006,   547,              NA,
+  "Korea",       2009,   546,              NA,
+  "Korea",       2012,   554,              NA,
+  "Korea",       2015,   524,              NA,
+  "Korea",       2018,   526,              NA,
+  "Korea",       2022,   527,              NA,
+  "Estonia",     2003,   NA,               NA,
+  "Estonia",     2006,   515,              NA,
+  "Estonia",     2009,   512,              NA,
+  "Estonia",     2012,   521,              NA,
+  "Estonia",     2015,   520,              NA,
+  "Estonia",     2018,   523,              NA,
+  "Estonia",     2022,   510,              NA,
+  "Swiss",       2003,   527,              NA,
+  "Swiss",       2006,   530,              NA,
+  "Swiss",       2009,   534,              NA,
+  "Swiss",       2012,   531,              NA,
+  "Swiss",       2015,   521,              NA,
+  "Swiss",       2018,   515,              NA,
+  "Swiss",       2022,   508,              NA,
+  "AS",          2003,   483,              NA,
+  "AS",          2006,   474,              NA,
+  "AS",          2009,   487,              NA,
+  "AS",          2012,   481,              NA,
+  "AS",          2015,   470,              NA,
+  "AS",          2018,   478,              NA,
+  "AS",          2022,   465,              NA,
+  "Meksiko",     2003,   385,              NA,
+  "Meksiko",     2006,   406,              NA,
+  "Meksiko",     2009,   419,              NA,
+  "Meksiko",     2012,   413,              NA,
+  "Meksiko",     2015,   408,              NA,
+  "Meksiko",     2018,   409,              NA,
+  "Meksiko",     2022,   395,              NA,
+  "Brazil",      2003,   356,              NA,
+  "Brazil",      2006,   370,              NA,
+  "Brazil",      2009,   386,              NA,
+  "Brazil",      2012,   389,              NA,
+  "Brazil",      2015,   377,              NA,
+  "Brazil",      2018,   384,              NA,
+  "Brazil",      2022,   379,              NA,
+  "Filipina",    2003,   NA,               NA,
+  "Filipina",    2006,   NA,               NA,
+  "Filipina",    2009,   NA,               NA,
+  "Filipina",    2012,   NA,               NA,
+  "Filipina",    2015,   NA,               NA,
+  "Filipina",    2018,   353,              NA,
+  "Filipina",    2022,   355,              NA,
+  "Rerata OEAD", 2003,   502,              NA,
+  "Rerata OEAD", 2006,   501,              NA,
+  "Rerata OEAD", 2009,   502,              NA,
+  "Rerata OEAD", 2012,   499,              NA,
+  "Rerata OEAD", 2015,   496,              NA,
+  "Rerata OEAD", 2018,   496,              NA,
+  "Rerata OEAD", 2022,   480,              NA
+)
+
+ui <- fluidPage(
+  titlePanel("Skor Matematika Indonesia di PISA"),
+  sidebarLayout(
+    sidebarPanel(
+      wellPanel(
+      radioButtons("pilih_data", "Pilih diagram:",
+                  choices = c("Tren" = "tren",
+                              "Perbandingan" = "banding"),
+                  selected = "tren")
+      ),
+      wellPanel(
+        div(p("Tampilkan:", style = "font-weight: bold;")),
+      conditionalPanel("input.pilih_data == 'tren'",
+                       checkboxInput("rerata_oead",
+                                     "Rerata OEAD",
+                                     value = FALSE)),
+      conditionalPanel("input.pilih_data == 'banding'",
+                       checkboxInput("rerata_lima_teratas",
+                                     "Lima negara teratas",
+                                     value = TRUE))
+      )
+    ),
+    mainPanel(
+      conditionalPanel(
+        "input.pilih_data == 'tren'",
+        plotOutput("plot_tren")
+      ),
+      conditionalPanel(
+        "input.pilih_data == 'banding'",
+        plotOutput("plot_banding")
+      )
+    )
+  )
+)
+
+server <- function(input, output) {
+  # Plot tren
+  output$plot_tren <- renderPlot({
+    if (input$rerata_oead == FALSE) {
+      data_matematika %>%
+        filter(negara == "Indonesia") %>% 
+        ggplot(aes(x = tahun, y = skor_matematika)) +
+        geom_line(stat = "smooth", method = "lm",
+                  formula = y ~ x + I(x^2), linewidth = 1.5, alpha = .6) +
+        geom_line(aes(group = negara, color = "Indonesia"), linewidth = 2,
+                  alpha = .6) +
+        geom_point(size = 5, aes(color = "Indonesia")) +
+        scale_color_manual(name = "Negara",
+                           values = c("Indonesia" = "#d95f02")) +
+        ylim(350, 550) +
+        theme_bw(base_size = 16) +
+        theme(legend.position = "bottom") +
+        labs(title = "Tren Skor Matematika Indonesia",
+             x = "Tahun", y = "Skor Matematika")
+    } else {
+      data_matematika %>% 
+        filter(negara %in% c("Indonesia", "Rerata OEAD")) %>% 
+        ggplot(aes(x = tahun, y = skor_matematika)) +
+        geom_line(stat = "smooth", method = "lm",
+                  formula = y ~ x + I(x^2), linewidth = 1.5, alpha = .6,
+                  aes(group = negara)) +
+        geom_line(aes(group = negara, color = negara), linewidth = 2,
+                  alpha = .6) +
+        geom_point(aes(color = negara), size = 5) +
+        ylim(350, 550) +
+        scale_color_brewer(palette = "Dark2", direction = -1,
+                           name = "Negara") +
+        theme_bw(base_size = 16) +
+        theme(legend.position = "bottom") +
+        labs(title = "Tren Skor Matematika Indonesia",
+             x = "Tahun", y = "Skor Matematika")
+    }
+  })
+  
+  # Plot banding
+  output$plot_banding <- renderPlot({
+    if (input$rerata_lima_teratas == FALSE) {
+      data_matematika %>% 
+        filter(tahun == 2022 & negara != "Rerata OEAD" &
+                 skor_matematika < 508) %>% 
+        mutate(negara = fct_reorder(negara, skor_matematika)) %>% 
+        mutate(indonesia = ifelse(negara == "Indonesia", TRUE, FALSE)) %>% 
+        ggplot(aes(x = skor_matematika, y = negara)) +
+        geom_segment(aes(x = skor_matematika, xend = 480,
+                         y = negara, yend = negara, color = indonesia),
+                     alpha = .4, linewidth = 2) +
+        geom_vline(xintercept = 480, linetype = "dashed",
+                   linewidth = 2) +
+        geom_point(aes(color = indonesia), size = 5) +
+        scale_color_manual(values = c("TRUE" = "#d95f02",
+                                      "FALSE" = "gray50")) +
+        theme_bw(base_size = 16) +
+        theme(legend.position = "none",
+              axis.title.y = element_blank()) +
+        labs(title = "Indonesia vs Negara-Negara Lain",
+             x = "Skor Matematika")
+    } else {
+      data_matematika %>%
+        filter(tahun == 2022 & negara != "Rerata OEAD") %>% 
+        mutate(negara = fct_reorder(negara, skor_matematika)) %>% 
+        mutate(indonesia = ifelse(negara == "Indonesia", TRUE, FALSE)) %>% 
+        ggplot(aes(x = skor_matematika, y = negara)) +
+        geom_segment(aes(x = skor_matematika, xend = 480,
+                         y = negara, yend = negara, color = indonesia),
+                     alpha = .4, linewidth = 2) +
+        geom_vline(xintercept = 480, linetype = "dashed", linewidth = 2) +
+        geom_point(aes(color = indonesia), size = 5) +
+        scale_color_manual(values = c("TRUE" = "#d95f02",
+                                      "FALSE" = "gray50")) +
+        theme_bw(base_size = 16) +
+        theme(legend.position = "none",
+              axis.title.y = element_blank()) +
+        labs(title = "Indonesia vs Negara-Negara Lain",
+             x = "Skor Matematika")
+    }
+  })
+  
+}
+
+shinyApp(ui, server)
+
+```
+:::
